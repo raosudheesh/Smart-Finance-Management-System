@@ -1,0 +1,25 @@
+<form method="POST">
+  <button type="submit" name="pay" class ="btn btn-dark center3">PAY</button>
+  </form>
+  <a class="btn btn-dark center2" href="home.php">HOME</a>
+  
+  <?php
+  if(isset($_POST["pay"]))
+  {
+      $str="update loan set bal=bal-'$emi' where cid='$cid'";
+      $query=mysqli_query($con,$str);
+
+  }
+
+
+?>
+
+
+
+<?php
+  if(isset($_POST["pay"]))
+  {
+      $str="update loan set bal=bal-'$emi' where cid='$cid'";
+      $query=mysqli_query($con,$str);
+
+  }
